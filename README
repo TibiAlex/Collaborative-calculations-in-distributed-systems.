@@ -1,0 +1,21 @@
+Buzera Tiberiu 333CA
+
+Pentru tema 3 am avut de implementat Calcule colaborative in sisteme distribuite.
+
+Primul task pe care l-am avut a fost citirea tuturor workerilor pentru cei 3
+coordonatori. Apoi a trebuit sa fie trimis vectorul de workeri pentru ceilalti 
+2 coordonatori pentru a avea cu totii acces la ele. Fiecare coordonator isi afisaza
+topologia dupa care trimite la fiecare worker vectorii primiti pentru a putea afisa
+si workerii topologiile la randul lor.
+
+Pentru al 2 lea task am creat un vector de n elemente in procesul 0 care a fost
+trimis prima data la ceilalti 2 coordonatori dupa care de catre acestia la fiecare 
+worker impreuna cu o pozitie de unde sa inceapa sa calculeze acestia.
+Dupa dublarea portiunii workerii trimmiteau vectorul inapoi la coordonator unde era
+intregit si apoi trimis la procesul 0 unde sa fie intregit complet si afisat.
+
+Al 3 lea task a modificat doar implementarea primelor 2 taskuri intrucat procesul 0
+si procesul 1 nu au mai putut comunica direct si a fost nevoie ca toate interactiunile
+dintre acestea sa fie facute prin intermediul procesului 2.
+
+
